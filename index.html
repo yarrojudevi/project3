@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Design UI Design In HTML And CSS-Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+    <form>
+    <div class="container">
+      <div class="feedbackbox">
+    
+      <h1>Give your Feedback</h1>
+      <div class="id">
+        <input type="text" placeholder="Full Name">
+        <i class="far fa-user"></i>
+      </div>
+      <div class="id">
+        <input type="email" placeholder="Email address">
+        <i class="far fa-envelope"></i>
+        </div>
+        <div>
+        <textarea cols="22" rows="5" placeholder="Enter your opinions here.."></textarea>
+        
+      </div>
+    </form>
+   
+    <div class="emoji">
+        <div id="emoji">
+        <img src="https://freepngimg.com/thumb/crying_emoji/36923-7-crying-emoji-file-thumb.png">
+        <img src="https://freepngimg.com/thumb/emoji/8-2-fearful-emoji-png-thumb.png">
+        <img src="https://freepngimg.com/thumb/emoji/47416-2-smiley-image-free-png-hq-thumb.png">
+        <img src="https://freepngimg.com/thumb/emoji/2-2-grinning-face-emoji-png-thumb.png">
+        <img src="https://freepngimg.com/thumb/emoji/3-2-love-hearts-eyes-emoji-png-thumb.png">
+        </div>
+      </div>
+      <div class="rating"> 
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    <script>
+      var stars = document.getElementsByClassName("fas");
+      var emoji = document.getElementById("emoji");
+      stars[0].onclick = function(){
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#e4e4e4";
+        stars[2].style.color = "#e4e4e4";
+        stars[3].style.color = "#e4e4e4";
+        stars[4].style.color = "#e4e4e4";
+        emoji.style.transform = "translatex(0)";
+      }
+      stars[1].onclick = function(){
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#e4e4e4";
+        stars[3].style.color = "#e4e4e4";
+        stars[4].style.color = "#e4e4e4";
+        emoji.style.transform = "translatex(-100px)";
+      }
+      stars[2].onclick = function(){
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#ffd93b";
+        stars[3].style.color = "#e4e4e4";
+        stars[4].style.color = "#e4e4e4";
+        emoji.style.transform = "translatex(-200px)";
+      }
+      stars[3].onclick = function(){
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#ffd93b";
+        stars[3].style.color = "#ffd93b";
+        stars[4].style.color = "#e4e4e4";
+        emoji.style.transform = "translatex(-300px)";
+      }
+      stars[4].onclick = function(){
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#ffd93b";
+        stars[3].style.color = "#ffd93b";
+        stars[4].style.color = "#ffd93b";
+        emoji.style.transform = "translatex(-400px)";
+      }
+    </script><br>
+    <button type="submit" class="btn" onclick="openPopup()">submit</button>
+    <div class="popup" id="popup">
+      <img src="https://hwchamber.co.uk/wp-content/uploads/2020/05/tick-icon-symbol-green-checkmark-isolated-vector-24026516.jpg">
+      <h2>Thank You!</h2>
+      <p>Your response has been send. Thanks!</p>
+      <button type="button" onclick="closePopup()">OK</button>
+    </div>
+
+<script>
+  let popup = document.getElementById("popup");
+
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+
+  function closePopup(){
+    popup.classList.remove("open-popup");
+  }
+
+</script>
+
+
+</div>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,158 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+  }
+  body{
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg');
+    background-attachment:fixed;
+    background-image: no-repeat;
+	background-size:cover;
+  }
+  
+  form h1{
+    padding: 10px 0;
+  }
+  form .id{
+    position: relative;
+  }
+  .id i{
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    right: 20px;
+    transform: translatey(-50%);
+  }
+  form input{
+    width: 100%;
+    height: 50px;
+    margin: 4px 0;
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: rgb(197, 19, 126);
+    padding: 0 15px;
+    padding-right: 45px;
+    font-size: 20px;
+  }
+  form textarea{
+    padding: 5px 15px;
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: rgb(197, 19, 126);;
+    font-size: 20px;
+    width: 318px;
+    margin: 4px 0;
+
+  }
+  
+  
+  .container{
+    position: relative;
+    min-height: 100vh;
+   display: flex;
+   background-attachment:fixed;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px 20px;
+  }
+  .feedbackbox{
+    background: #00fff0;
+    padding: 50px 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .emoji{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+  .emoji img{
+    width: 80px;
+    margin: 0 10px;
+  }
+  #emoji{
+    display: flex;
+    align-self: center;
+    transform: translateX(-400px);
+    transition: all 0.3s ease;
+  }
+  .rating .fas{
+     font-size: 40px;
+     color: #e4e4e4;
+     cursor: pointer;
+  }
+  form input:focus::placeholder,
+  form textarea:focus::placeholder{
+    padding-left: 4px;
+    border: 1px solid black;
+    color: black;
+    transition: all 0.3s ease;
+  }
+  .btn{
+    width: 100%;
+    padding: 10px 125px;
+    background: blue;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 22px;
+    font-weight: 800;
+    border: none;
+    outline: none;
+  }
+  .popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+  }
+  .open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+  }
+  .popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  .popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin:  30px 0 10px;
+  }
+  .popup button{
+    width: 300px;
+    margin-top: 50px;
+    background: #6fd649;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 10px 0;
+    color: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
